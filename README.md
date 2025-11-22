@@ -1,9 +1,19 @@
 # Previsão de produção energética solar
 
-### Utilização de datasets da produção entre paineis solares limpos e sujos para prever a diferença de eficiência energética.
+### Previsão Inteligente de Geração Solar com Análise
 <hr>
 
-Dataset pendente devido a necessidade de autorização por parte do administrador dos dados.
+### Fluxograma:
 
-O dataset se trata da preodução energética dos paineis solares por um periodo de 7 anos onde estes estavam sujeitos a sujeira. Contudo, acerca de 2 meses
-atrás fora instalado um sistema de limpeza em 5 paineis para melhoria da produção. Esses são os dados de produção que compõem o dataset. 
+
+### Dados de entrada:
+Os datasets se tratam da potência nos painéis solares fotovoltaicos presentes no terraço de um dos blocos do IFCE Campus Caucaia, por um período de 3 meses onde estes estavam sujeitos a sujeira como poeira e pequenos grãos de areia.
+
+Um dos datasets possui os dados daqueles com um sistema de limpeza via ar comprimido feito por José Tarcizio, coordenador do curso técnico de eletroeletrônica, enquanto o outro possui dados daqueles que não estavam sujeitos a essa limpeza periódica.
+* Os Datasets utilizados estarão disponíveis para consulta nesse repositório.
+
+### Pipeline do projeto:
+- Coleta dados de corrente, tensão, eficiência (painéis limpos vs. sujos) + dados meteorológicos
+- Processa e cria features específicas para isolamento do fator sujeira
+- Treina modelos de ML especializados em prever geração energética
+- Entrega previsões com intervalo de confiança para tomada de decisão
